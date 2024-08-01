@@ -27,8 +27,12 @@ Neste documento, descrevemos os procedimentos básicos necessários para demonst
 
 ### 3. Analisar
 
--   Após o treinamento, examine as métricas de performance do modelo.
+-   Após o treinamento, a 1a. versão do nosso modelo retornou como métricas de performance:
+    -    Avg. wQL : 0.060    MAPE : 0.149    WAPE : 0.103    RMSE : 5.977    MASE : 0310
+
 -   Verifique as principais características que influenciam as previsões.
+    -    PRECO tendo impacto de 9,14%;
+    -    FERIADO no Brasil tendo impacto de 2,79%
 -   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
 
 ### 4. Prever
@@ -37,6 +41,4 @@ Neste documento, descrevemos os procedimentos básicos necessários para demonst
 -   Exporte os resultados e analise as previsões geradas.
 -   Documente suas conclusões e qualquer insight obtido a partir das previsões.
 
-## 🤔 Dúvidas?
 
-Esperamos que esta experiência tenha sido enriquecedora e que você tenha aprendido mais sobre Machine Learning aplicado a problemas reais. Se tiver alguma dúvida, não hesite em abrir uma issue neste repositório ou entrar em contato com a equipe da DIO.
