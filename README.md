@@ -50,5 +50,9 @@ Neste documento, descrevemos os procedimentos básicos necessários para demonst
 
 -    Importante ressaltar previamente que poderão ocorrer resultados dirvergentes porque não utilizei todos os recursos ou configurações disponíveis pela ferramenta SageMaker Canvas.
 -    O Desconto oferecido em média nos produtos é de 10% e o impacto deste indicador em nosso modelo foi de 9.14%, sendo assim, podemos concluir que para uma previsão de apenas 1 dia não devemos considerar uma oferta de desconto para os produtos.
--     Em outra configuração de previsão, de 9 dias, o indicador de preço passou a ter uma relevância de 34.81% no nosso modelo. 
-
+-    Já para uma previsão de 9 dias, o indicador de preço passou a ter uma relevância de 34.81% no nosso modelo. Neste sentido, seria importante uma avaliação mais detalhada sobre os dados previstos pelo nosso modelo.
+-    Foi interessante avaliar que a questão do feriado de final de ano não trouxe um impacto relevante para o negócio. Uma sugestão de fechamento das lojas poderia ser melhor analisada visando redução dos custos operacionais. Informações de vendas de outros feriados precisam ser ingeridas neste modelo visando aprimoramento desta sugestão.
+-    As formas disponíveis para análise das previsões dentro do Canvas não são boas. Não sendo possível analisar mais de um produto ao mesmo tempo.
+-    As formas disponíveis para exportação das previsões não são boas, não sendo possível exportar a previsão para mais de um produto ao mesmo tempo.
+-    Não foi possível identicar nos gráficos gerados alguma menção quanto ao indicador de feriado.
+-    Neste momento, optei em paralisar o estudo pois haveria um grande esforço operacional de realizar 25 exportações e organização destas informações em uma planilha (ex: Excel) visando comparações manuais com os dados originais e obter outros insights.
