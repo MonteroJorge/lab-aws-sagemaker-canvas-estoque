@@ -28,17 +28,27 @@ Neste documento, descrevemos os procedimentos básicos necessários para demonst
 ### 3. Analisar
 
 -   Após o treinamento, a 1a. versão do nosso modelo retornou como métricas de performance:
-    -    Avg. wQL : 0.060    MAPE : 0.149    WAPE : 0.103    RMSE : 5.977    MASE : 0310
+    -    Avg. wQL : 0.060    MAPE : 0.149    WAPE : 0.103    RMSE : 5.977    MASE : 0.310
 
 -   Verifique as principais características que influenciam as previsões.
-    -    PRECO tendo impacto de 9,14%;
-    -    FERIADO no Brasil tendo impacto de 2,79%
--   Faça ajustes no modelo se necessário e re-treine até obter um desempenho satisfatório.
+    -    PRECO tendo impacto de 9.14%.
+    -    FERIADO no Brasil tendo impacto de 2.79%.
+ 
+-    Após ajustes no modelo, passando a gerar um previsão para os próximos 9 dias, a 2a. versão retornou como métricas de performance:
+        -    Avg. wQL : 0.259    MAPE : 1.803    WAPE : 0.378    RMSE : 29.146    MASE : 1.393
+        -    PRECO tendo impacto de 34.81%.
+        -    FERIADO no Brasil tendo impacto de 1.89%.
+
+-   Faça ajustes no seu modelo, se necessário, e re-treine até obter um desempenho satisfatório.
 
 ### 4. Prever
 
 -   Use o modelo treinado para fazer previsões de estoque.
 -   Exporte os resultados e analise as previsões geradas.
--   Documente suas conclusões e qualquer insight obtido a partir das previsões.
+  
+### 5. Considerações finais após realização deste Estudo
 
+-    Importante ressaltar previamente que poderão ocorrer resultados dirvergentes porque não utilizei todos os recursos ou configurações disponíveis pela ferramenta SageMaker Canvas.
+-    O Desconto oferecido em média nos produtos é de 10% e o impacto deste indicador em nosso modelo foi de 9.14%, sendo assim, podemos concluir que para uma previsão de apenas 1 dia não devemos considerar uma oferta de desconto para os produtos.
+-     Em outra configuração de previsão, de 9 dias, o indicador de preço passou a ter uma relevância de 34.81% no nosso modelo. 
 
